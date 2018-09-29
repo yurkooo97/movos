@@ -18,3 +18,13 @@ body{
 .wrapper_full-width{
   max-width: 10000px;
 }
+.fixed-footer{
+  display: flex;
+  flex-direction: column;
+}
+.fixed-footer .page{
+  flex: 1 auto;
+}
+.fixed-footer .footer{
+  margin-top: auto;
+}
