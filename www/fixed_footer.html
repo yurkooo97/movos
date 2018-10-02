@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <title>base layout</title>
+  <title>BEM layout</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link 
     rel="stylesheet"  
     href="css/styles.css"
@@ -12,12 +13,87 @@
 <body class="fixed-footer">
   <div class="header">
     <div class="wrapper">
-      header
+      <p>Першим ділом виділяємо горизонталі в кожній виділяємо вертикалі</p>
     </div>
   </div>
   <div class="page">
     <div class="wrapper">
-      page content
+      <div class="movie">
+        <div class="movie__poster">
+          <div class="poster">
+            <img class="poster__img m-b-20" src="img/1.jpg" alt="">
+            <div class="poster__valuation m-b-20 ta-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="movie__description">
+          <div class="movie__title">
+            Star Trek
+          </div>
+          <div class="movie__description-row movie__slogan">
+            some awesome slogan
+          </div>
+          <div class="movie__description-row cast">
+            <ul>
+              <li>John Doe</li>
+            </ul>
+          </div>
+          <div class="movie__description-row movie__actions ta-center">
+            <a href="#" class="button"> add to favorite</a><!--
+            --><a href="#" class="button button_green"> play</a>
+          </div>
+        </div>
+      </div>
+      <div class="movie">
+        <div class="movie__poster">
+          <div class="poster">
+            <img class="poster__img m-b-20" src="img/2.jpeg" alt="">
+            <div class="poster__valuation m-b-20 ta-center">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="movie__description">
+          <div class="movie__title">
+            Фури - Кури
+          </div>
+          <div class="movie__description-row movie__slogan">
+            some awesome slogan
+          </div>
+          <div class="movie__description-row cast">
+            <ul>
+              <li>John Doe</li>
+            </ul>
+          </div>
+          <div class="movie__description-row movie__actions ta-center">
+            <a href="#" class="button"> add to favorite</a><!--
+            --><a href="#" class="button button_green"> play</a>
+          </div>
+        </div>
+      </div>
+      <div class="goods">
+        <div class="goods__top">
+          <i title="Безкоштовна доставка" class="fas fa-truck-moving"></i>
+        </div>
+        <div class="goods__img">
+          
+        </div>
+        <div class="goods__buy-box">
+
+        </div>
+        <div class="goods__footer">
+
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer">

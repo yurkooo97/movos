@@ -10,6 +10,12 @@ html{
 body{
   min-height: 100%;
 }
+img{
+  max-width: 100%;
+}
+.ta-center{
+  text-align: center;
+}
 .wrapper{
   padding: 0 20px;
   max-width: 960px;
@@ -33,4 +39,55 @@ body{
 }
 .fixed-footer .footer{
   margin-top: auto;
+}
+.m-b-20{
+  margin-bottom: 20px;
+}
+.button{
+  padding: 12px 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: orange;
+  color: #fff;
+  display: inline-block;
+}
+.button_green{
+  background: green;
+}
+.movie__description-row{
+  margin: 20px 0;
+}
+.movie__slogan{
+  font-style: italic;
+}
+.movie__title{
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+ /*медіазапит CSS*/
+ /*@media - ключове слово*/
+ /* ( тут пишем правило спрацювання )*/
+ /* { тут селестори та стилі }*/
+@media ( min-width: 560px ) {
+
+  .movie{
+    display: flex;
+    /*display: flex; 
+      - вмикає flex поведінку, 
+      ставить дочірні блоки в ряд,
+      робить їх по ширині свого контенту
+    */
+  }
+  .movie__poster{
+    max-width: 200px;
+    /* обмежує блок з постером по ширині*/
+  }
+  .movie__description{
+    padding-left: 20px;
+    flex: 1 auto;
+    /*flex: 1 auto; 
+    заставляє цей блок тягнутися 
+    по всій доступній йому ширині*/
+  }
 }
