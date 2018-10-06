@@ -18,7 +18,7 @@ img{
 }
 .wrapper{
   padding: 0 20px;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .wrapper_full-width{
@@ -43,27 +43,7 @@ img{
 .m-b-20{
   margin-bottom: 20px;
 }
-.button{
-  padding: 12px 15px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: orange;
-  color: #fff;
-  display: inline-block;
-}
-.button_green{
-  background: green;
-}
-.movie__description-row{
-  margin: 20px 0;
-}
-.movie__slogan{
-  font-style: italic;
-}
-.movie__title{
-  font-size: 2em;
-  font-weight: bold;
-  color: #333;
+
 }
  /*медіазапит CSS*/
  /*@media - ключове слово*/
@@ -90,4 +70,56 @@ img{
     заставляє цей блок тягнутися 
     по всій доступній йому ширині*/
   }
+  
+
+}
+.m-20{
+  margin: 20px;
+}
+.p-10{
+  padding: 10px;
+}
+
+
+
+
+.components__img{
+  max-width: 180px;
+  }
+@media ( min-width: 400px ) {
+  .components{
+  display: inline-flex;
+  width: 100%;
+  
+  }
+  .components__logo{
+  width: 25%;
+  } 
+}
+.components{
+  background: #A4A4A4;
+  margin-top: 20px;
+  font-family: Arial;
+  color: white;
+  font-weight: bold;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+.components__experience{
+  
+  width: 25%;
+  vertical-align: middle;
+  
+}
+.components__interactive-methods{
+  width: 25%;
+}
+.components__approach{
+  width: 25%;
+  text-align: left;
 }
