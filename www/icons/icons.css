@@ -1,0 +1,23 @@
+.sprite {
+    background-image: url(icons.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+.sprite-people {
+    width: 32px;
+    height: 26px;
+    background-position: -5px -5px;
+}
+
+.sprite-tie {
+    width: 17px;
+    height: 32px;
+    background-position: -47px -5px;
+}
+
+.sprite-white-board {
+    width: 25px;
+    height: 32px;
+    background-position: -5px -47px;
+}
