@@ -1,0 +1,41 @@
+.sprite-2 {
+    background-image: url(icons-2.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-2-callendar {
+    width: 40px;
+    height: 38px;
+    background-position: -5px -5px;
+}
+
+.sprite-2-chair {
+    width: 36px;
+    height: 40px;
+    background-position: -55px -5px;
+}
+
+.sprite-2-clock {
+    width: 35px;
+    height: 40px;
+    background-position: -5px -55px;
+}
+
+.sprite-2-dialog {
+    width: 40px;
+    height: 36px;
+    background-position: -50px -55px;
+}
+
+.sprite-2-human {
+    width: 26px;
+    height: 40px;
+    background-position: -101px -5px;
+}
+
+.sprite-2-lamp {
+    width: 39px;
+    height: 40px;
+    background-position: -100px -55px;
+}

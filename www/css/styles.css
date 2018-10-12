@@ -9,19 +9,60 @@ html{
 }
 body{
   min-height: 100%;
-  background: #F2F2F2;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif ;
 }
+body:before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 230px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#eaeaea+0,ffffff+100 */
+  background: rgb(234,234,234); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(234,234,234,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(234,234,234,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(234,234,234,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eaeaea', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+} 
 img{
-  width: 150px;
-  height: auto;
+  max-width: 100%;
 }
 .ta-center{
   text-align: center;
 }
 .wrapper{
   padding: 0 20px;
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 960px;
+}
+[class*="col-"],[class*="-col__"]{
+  padding: 0 20px;
+  width: 100%;
+}
+@media (min-width: 560px){
+  .col-phablet-1-2{
+    max-width: 50%;
+  }
+}
+@media (min-width: 960px){
+  .col-desktop-1-4{
+    max-width: 25%;
+  }
+  .col-desktop-3-4{
+    max-width: 75%; 
+  }
+  .col-desktop-1-3{
+    max-width: 33.33%; 
+  }
+}
+
+.row{
+  margin: 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .wrapper_full-width{
   max-width: 10000px;
@@ -83,9 +124,7 @@ img{
 }
 
 
-.advantages {
-  
-  background-size: cover;
+
   
 }
 .advantages__flex{
@@ -106,23 +145,27 @@ display: flex;
 max-width: 250px;
 }
 .logo{
-  height: 61px;
+  height: 52px;
   background: #E6E6E6;
-  padding: 10px;
-  padding-right: 30px;
-  padding-left: 30px;
-  width: 210px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
   
   
   
 }
 .advantages{
   display: flex;
-  height: 61px;
+  height: 52px;
   background-size: cover;
   font-family: Arial;
   color: #F7F8FC;
   font-weight: 600;
+  flex: 1 25%;
+  
 }
 .advantages__text{
   display: flex;
@@ -131,34 +174,54 @@ max-width: 250px;
 }
 
 .top-bar{
-  background: #586FAC;
-  padding: 20px;
+  background: #3f4e86;
+  padding: 10px 15px;
   display: flex;
   font-family: Arial;
-  color: #F7F8FC;
+  color: #fff;
+  text-align: center;
 }
 .contacts{
   margin: auto;
   
   margin-left: auto;
-  margin-right: 2em; 
-  color:  #97B5F9;
+  margin-right: 10px; 
+  color:  #fff;
 
   
 
 }
 .header{
-  margin-top: 15px;
+  
+  padding-top: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: inset 0 3px 0 0 #3f4e86;
 }
 .telephone-top{
-  padding-left: 15px;
+  
   margin: auto 0;
 
 }
 .advantages_bg1{
   background-image: url('../img/advantages_bg1.png');
 }
-
+.advantages_bg2{
+  background-image: url('../img/advantages_bg2.png');
+}
+.advantages_bg3{
+  background-image: url('../img/advantages_bg3.png');
+}
+.advantages .advantages_bg1{
+  
+}
+.advantages .advantages_bg2{
+  
+}
+.advantages .advantages_bg3{
+  
+}
 #nav{
   font-family: Arial;
   list-style-type: none;
@@ -191,7 +254,8 @@ max-width: 250px;
   border-bottom: 2px solid #F2F2F2;
 }
 #menu{
-  width: 260px;
+  width: 220px;
+  
 }
 .copyright{
   display: flex;
@@ -208,23 +272,26 @@ max-width: 250px;
   padding: 20px;
   border-top: 2px solid #B4B4AB;
 }
-.logo-adventages{
+.logo-advantages{
   display: flex;
-  width: 100%;
-  border-top: 2px solid #F2F2F2; 
+  max-width: 100%;
+  margin: 1px;
+  flex-direction: column;
+  width: 940px;
+
 }
 .telephone-top-color{
   color:  #97B5F9;
 }
 .main-page{
   display: flex;
-
+  flex-direction: column;
 }
 .content{
   width: 100%;
 }
 h1{
-  padding: 25px;
+  padding: 10px 0;
   padding-top: 0;
   font-family: Arial;
   font-weight: 500;
@@ -232,7 +299,7 @@ h1{
 }
 h2{
   font-size: 0.9em;
-  padding: 25px;
+  padding: 10px 0;
   padding-top: 0;
   font-family: Arial;
   font-weight: 550;
@@ -240,4 +307,73 @@ h2{
 }
 .purpose{
   color: #374989;
+}
+
+[href^="tel:"]{
+  text-decoration: none;
+  white-space: nowrap;
+  color: #aad4ff;
+}
+.page{
+  z-index: 3;
+}
+@media (min-width: 560px ){
+  .top-bar{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo-advantages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+  }
+  .logo{
+    min-width: 25%;
+  }
+}
+
+.opportunities{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.opportunities__box{
+  height: 140px;
+  width: 220px;
+  background: #3f4e86;
+  margin: 10px 0;
+  justify-content: center;
+
+  
+}
+@media (min-width: 560px ){
+  .main-page{
+    display: flex;
+    flex-direction: row;
+    
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+}
+.box-icon{
+  height: 40px;
+  padding: 15px 0; 
+}
+.box-text{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  color: #fff;
+}
+.opportunities__text{
+  font-size: 1.8em;
+  
+  
 }
